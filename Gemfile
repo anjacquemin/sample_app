@@ -25,6 +25,7 @@ gem 'minitest-reporters'
 gem 'guard'
 gem 'guard-minitest'
 
+gem 'bootstrap-sass', '3.4.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -50,6 +51,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+  gem 'rails-controller-testing'
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
