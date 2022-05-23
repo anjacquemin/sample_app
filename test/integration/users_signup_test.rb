@@ -29,6 +29,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       password_confirmation: "foobaar" } }
     end
     follow_redirect!
+    assert is_logged_in?
     assert_template 'users/show'
     assert_select 'div.alert'
     assert_not flash.empty?
