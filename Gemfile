@@ -6,6 +6,8 @@ ruby '3.0.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 
+gem 'faker', '2.1.2'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -23,6 +25,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'minitest-reporters'
 gem 'guard'
 gem 'guard-minitest'
+
+gem 'will_paginate', '3.1.8'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 gem 'bootstrap-sass', '3.4.1'
 
