@@ -14,7 +14,15 @@ User.create!(name: "Example User",
   admin: true,
   activated: true,
   activated_at: Time.zone.now)
-# Generate a bunch of additional users.
+
+
+  User.create!(name: "Example User 2",
+  email: "ex@railstutorial.org",
+  password: "foobar",
+  password_confirmation: "foobar",
+  admin: true)
+
+  # Generate a bunch of additional users.
 (1..50).each do |n|
   name =  'a' * n
   email = "example-#{n+1}@railstutorial.org"
