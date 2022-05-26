@@ -7,6 +7,7 @@ ruby '3.0.3'
 gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 
 gem 'faker', '2.1.2'
+gem 'pg', '1.1.4'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
