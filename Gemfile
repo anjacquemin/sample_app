@@ -6,7 +6,7 @@ ruby '3.0.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 
-gem 'faker', '2.1.2'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
@@ -26,7 +26,7 @@ gem 'minitest-reporters'
 gem 'guard'
 gem 'guard-minitest'
 
-gem 'will_paginate', '3.1.8'
+gem 'will_paginate', '3.3.1'
 gem 'bootstrap-will_paginate', '1.0.0'
 
 gem 'bootstrap-sass', '3.4.1'
