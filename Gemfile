@@ -25,9 +25,14 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'minitest-reporters'
 gem 'guard'
 gem 'guard-minitest'
+gem 'image_processing'
+gem 'mini_magick'
+
 
 gem 'will_paginate', '3.3.1'
 gem 'bootstrap-will_paginate', '1.0.0'
+
+gem 'active_storage_validations', '0.9.8'
 
 gem 'bootstrap-sass', '3.4.1'
 
