@@ -47,6 +47,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_storage_validations (0.9.8)
+      activejob (>= 5.2.0)
+      activemodel (>= 5.2.0)
+      activestorage (>= 5.2.0)
+      activesupport (>= 5.2.0)
     activejob (6.1.5.1)
       activesupport (= 6.1.5.1)
       globalid (>= 0.3.6)
@@ -118,6 +123,9 @@ GEM
       minitest (>= 3.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.2)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -133,6 +141,7 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mini_magick (4.11.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
     minitest-reporters (1.5.0)
@@ -200,6 +209,8 @@ GEM
     regexp_parser (2.3.1)
     rexml (3.2.5)
     ruby-progressbar (1.11.0)
+    ruby-vips (2.1.4)
+      ffi (~> 1.12)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -259,6 +270,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_storage_validations (= 0.9.8)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap-sass (= 3.4.1)
@@ -268,8 +280,10 @@ DEPENDENCIES
   faker!
   guard
   guard-minitest
+  image_processing
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  mini_magick
   minitest-reporters
   pg (= 1.1.4)
   puma (~> 5.0)
