@@ -27,6 +27,8 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", users_path
     assert_select "a[href=?]", logout_path
     assert_select "a[href=?]", login_path, count: 0
+    assert_select "a[href=?]", following_user_path(@user), count: 1
+    assert_select "a[href=?]", followers_user_path(@user), count: 1
   end
 
   test "layout links if not logged in" do
